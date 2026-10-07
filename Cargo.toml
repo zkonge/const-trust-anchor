@@ -1,12 +1,19 @@
 [package]
 name = "const-pki-types"
 description = "Converting X.509 certificates to the TrustAnchor in rustls-pki-types at compile time"
-version = "0.0.0"
+version = "0.0.1"
 edition = "2024"
+license = "MIT"
+repository = "https://github.com/zkonge/const-pki-types"
+readme = "README.md"
+keywords = ["x509", "rustls", "const", "trust-anchor", "webpki"]
+categories = ["cryptography", "no-std", "no-std::no-alloc", "parser-implementations"]
+exclude = ["rustfmt.toml", ".gitignore"]
 
 [dependencies]
-rustls-pki-types = { version = "1.13.1", default-features = false }
+rustls-pki-types = { version = "1.15.1", default-features = false }
 
 [dev-dependencies]
-webpki-root-certs = "1.0.4"
-webpki-roots = "1.0.4"
+rustls-webpki = { version = "0.103.15", default-features = false }
+webpki-root-certs = "1.0.9"
+webpki-roots = "1.0.9"
