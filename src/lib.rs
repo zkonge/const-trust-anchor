@@ -1,7 +1,7 @@
 //! Convert DER-encoded X.509 certificates into [`TrustAnchor`]s at compile time.
 //!
 //! ```
-//! use const_pki_types::{TrustAnchor, anchor_from_trusted_cert};
+//! use const_trust_anchor::{TrustAnchor, anchor_from_trusted_cert};
 //!
 //! const ANCHOR: TrustAnchor<'static> =
 //!     anchor_from_trusted_cert(include_bytes!("../tests/data/name_constraints.der"));

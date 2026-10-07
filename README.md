@@ -1,9 +1,9 @@
-# const-pki-types
+# const-trust-anchor
 
 X.509 DER → `rustls_pki_types::TrustAnchor`, in `const`.
 
 ```rust
-use const_pki_types::{TrustAnchor, anchor_from_trusted_cert};
+use const_trust_anchor::{TrustAnchor, anchor_from_trusted_cert};
 
 const ROOT: TrustAnchor<'static> = anchor_from_trusted_cert(include_bytes!("root.der"));
 ```
